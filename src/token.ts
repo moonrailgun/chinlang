@@ -6,7 +6,7 @@ export function preprocess(originText: string): string {
     ([alias, stand]) => (text = text.replace(RegExp(alias, 'g'), stand))
   );
 
-  // TODO 汉字数字转阿拉伯数字
-
   return text;
 }
+
+// TODO 汉字数字转数字
